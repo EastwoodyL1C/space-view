@@ -16,19 +16,6 @@
         transform: translate(-50%, -50%);
         z-index: -1;
 	}
-	&__title {
-        z-index: -2;
-        position: relative;
-        .item__title-border {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 343px;
-    
-        }
-	}
-    
 	&__description {
         margin-top: 5px;
         @include text($font, 400, 30px, 50px, $color-white);

@@ -33,8 +33,3 @@ img {
   height: auto;
   object-fit: cover;
 }
-h1 {
-  @include text($font, 400, 340px, 180px, $color-white);
-  margin: 0;
-  padding: 0;
-}
