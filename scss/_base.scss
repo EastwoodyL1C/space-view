@@ -6,7 +6,8 @@
 
 body {
   font-family: $font;
-  color: $color-body;
+  background-color: $color-body;
+  scroll-behavior: smooth;
 }
 html,
 body {
@@ -31,4 +32,9 @@ img {
   max-width: 100%;
   height: auto;
   object-fit: cover;
+}
+h1 {
+  @include text($font, 400, 340px, 180px, $color-white);
+  margin: 0;
+  padding: 0;
 }

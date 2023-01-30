@@ -7,17 +7,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Space-Viewer</title>
 	<link rel="shortcut icon" href="img\favicon.png" type="image/png">
-	<link rel="stylesheet" href="style.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.cdnfonts.com/css/creatball" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link rel="stylesheet"  href="scripts\carousel\owl.carousel.css">
+	<link rel="stylesheet"  href="scripts\carousel\owl.theme.default.css">
+	<link rel="stylesheet" href="style.css" />
 </head>
 
 <body id="body">
 	<div class="container">
 		<header class="header">
-			<a href="#" class="header__logo">Logo</a>
 			<div class="header__burger">
 				<span id="icon-menu" onclick="navToggle()" class="material-icons _active">
 					menu
@@ -26,22 +27,13 @@
 			<nav id="nav" class="header-nav">
 				<ul class="header-nav__ul">
 					<li class="header-nav__li">
-						<a href="#" class="header-nav__a _active">About</a>
+						<a href="#" class="header-nav__a">Home</a>
 					</li>
 					<li class="header-nav__li">
-						<a href="#" class="header-nav__a">Services</a>
+						<a href="#" class="header-nav__a">Gallery</a>
 					</li>
 					<li class="header-nav__li">
-						<a href="#" class="header-nav__a">Portfolio</a>
-					</li>
-					<li class="header-nav__li">
-						<a href="#" class="header-nav__a">Testimonials</a>
-					</li>
-					<li class="header-nav__li">
-						<a href="#" class="header-nav__a">Pricing</a>
-					</li>
-					<li class="header-nav__li">
-						<a href="#" class="header-nav__a">Contact</a>
+						<a href="#" class="header-nav__a">About</a>
 					</li>
 				</ul>
 				<span id="icon-close" onclick="navToggle()" class="material-icons">
@@ -49,7 +41,63 @@
 				</span>
 			</nav>
 		</header>
-		<script src="script.js"></script>
+		<main class="main-screen">
+			<div class="owl-carousel owl-theme">
+				<div class="item">
+					<div class="item__img">
+						<img src="..\img\planet-earth.png" alt="planet-earth">
+					</div>
+					<div class="item__title">
+						<h1>Earth</h1>
+					</div>
+					<div class="item__title-border">
+						<h1>Earth</h1>
+					</div>
+					<div class="item__description">
+						<p>This is a place for all space lovers where everyone will find a hundred things for themselves</p>
+					</div>
+					<div class="item__btn">
+						<a href="$" class="item-btn btn">Start Now</a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item__img">
+						<img src="..\img\planet-mars.png" alt="planet-mars">
+					</div>
+					<div class="item__title">
+						<h1>Mars</h1>
+					</div>
+					<div class="item__description">
+						<p>This is a place for all space lovers where everyone will find a hundred things for themselves</p>
+					</div>
+					<div class="item__btn">
+						<a href="$" class="item-btn btn">Start Now</a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item__img">
+						<img src="..\img\planet-moon.png" alt="planet-moon">
+					</div>
+					<div class="item__title">
+						<h1>Moon</h1>
+					</div>
+					<div class="item__description">
+						<p>This is a place for all space lovers where everyone will find a hundred things for themselves</p>
+					</div>
+					<div class="item__btn">
+						<a href="$" class="item-btn btn">Start Now</a>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<script src="script.js"></script>
+	<script
+	src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+	integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+	crossorigin="anonymous"></script>
+	<script src="scripts\carousel\owl.carousel.min.js"></script>
+	<script src="scripts\carousel\index.js"></script>
 </body>
 
 </html>
