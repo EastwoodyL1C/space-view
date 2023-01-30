@@ -4,20 +4,23 @@
     height: calc(100vh - 154px);
 }
 .item {
-    width: 100%;
-    height: 940px;
+    max-width: 100%;
+    height: 1000px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 	&__img {
         position: absolute;
         top: 50%;
-        left: 50%;
+        left: 54%;
         transform: translate(-50%, -50%);
         z-index: -1;
+        img {
+            max-width: 960px;
+        }
 	}
 	&__description {
-        margin-top: 5px;
+        margin-top: 270px;
         @include text($font, 400, 30px, 50px, $color-white);
 	}
 	&__btn {
