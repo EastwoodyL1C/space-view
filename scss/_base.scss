@@ -33,3 +33,8 @@ img {
   height: auto;
   object-fit: cover;
 }
+h1 {
+  text-transform: uppercase;
+  @include text($font, 400, 340px, 200px, $color-white);
+  margin: 0;
+}

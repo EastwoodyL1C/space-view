@@ -12,15 +12,31 @@
 	&__img {
         position: absolute;
         top: 50%;
-        left: 54%;
+        left: 50%;
         transform: translate(-50%, -50%);
         z-index: -1;
         img {
             max-width: 960px;
         }
 	}
+    &__title {
+        position: relative;
+        z-index: -2;
+        margin-top: 20px;
+    }
+    &__title-border {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+        z-index: 0;
+        h1 {
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 2.75px $color-white;
+        }
+    }
 	&__description {
-        margin-top: 270px;
+        margin-top: 10px;
         @include text($font, 400, 30px, 50px, $color-white);
 	}
 	&__btn {
@@ -30,6 +46,11 @@
         a {
             border: 1px solid $color-primary;
             padding: 10px 25px;
+            &:hover {
+                background: $color-primary;
+                color: $color-black;
+                transform: scaleY(110%)
+            }
         }
 	}
 }
