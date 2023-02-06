@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 37px 0;
+    padding: 27px 0;
     @include desktop-small {
     justify-content: flex-end;
     }
@@ -37,6 +37,9 @@
         transition: $transition;
         @include desktop-small {
             color: $color-white;
+        }
+        &:hover {
+            text-decoration: underline;
         }
     }
     @include desktop-small {
