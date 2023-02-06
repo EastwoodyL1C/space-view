@@ -1,13 +1,24 @@
 .tab {
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 140px;
+    margin-bottom: 50px;
     &__col {
+        &:not(:last-child) {
+        border-right: 1px solid $color-secondary;
+        padding-right: 140px;
+        }
     }
 }
 .tab-col {
-
+    display: flex;
+    flex-direction: column;
     &__amount {
+        @include text($font, 400, 46px, 48px, $color-white);
+        margin-bottom: 24px;
     }
-
     &__description {
+        @include text($font, 400, 26px, 28px, $color-white);
     }
 }
