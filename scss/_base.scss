@@ -38,3 +38,7 @@ h1 {
   @include text($font, 400, 340px, 200px, $color-white);
   margin: 0;
 }
+h2 {
+  @include text($font, 400, 62px, 75px, $color-white);
+  margin: 0;
+}
