@@ -1,0 +1,25 @@
+.team {
+    margin-top: 135px;
+    margin-bottom: 270px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 120px;
+    align-items: center;
+}
+.team__title {
+    grid-area: 1 / 1 / 2 / 2;
+}
+.team__description {
+    grid-area: 2 / 1 / 3 / 2;
+    @include text($font, 400, 23px, 38px, $color-text-team);
+    max-width: 750px;
+}
+.team__image {
+    grid-area: 3 / 1 / 4 / 2;
+    max-width: 570px;
+}
+.team__background {
+    grid-area: 1 / 2 / 4 / 3;
+
+}
